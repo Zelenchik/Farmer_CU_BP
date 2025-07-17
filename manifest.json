@@ -1,8 +1,8 @@
 {
     "format_version": 2,
     "header": {
-        "name": "Dolgostroi",
-        "description": "Это будет долго",
+        "name": "Farmer_CU_BP",
+        "description": "Начнём сажать!",
         "uuid": "0e8ec917-fa8b-4d95-8330-4f705c136d8a",
         "version": [1, 0, 0],
         "min_engine_version": [1, 20, 20]

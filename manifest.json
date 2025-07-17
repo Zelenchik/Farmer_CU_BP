@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Dolgostroi",
+        "description": "Это будет долго",
+        "uuid": "0e8ec917-fa8b-4d95-8330-4f705c136d8a",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 20, 20]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "3afabd00-ce43-4635-a3f2-3ec954626941",
+            "version": [1, 0, 0]
+        }
+    ],
+    "metadata": {
+        "product_type": "addon"
+    }
+}

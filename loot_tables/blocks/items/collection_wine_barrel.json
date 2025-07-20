@@ -1,0 +1,35 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:planks",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "arx:collection_wine",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 8
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

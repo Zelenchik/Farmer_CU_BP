@@ -1,0 +1,197 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+      "description": {
+        "identifier": "arx:sweet_berries_juice_barrel",
+        "menu_category": {
+          "category": "items"
+        },
+        "states": {
+          "arx:aging_stage": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      "components": {
+        "minecraft:flammable": true,
+        "minecraft:collision_box": true,
+        "minecraft:geometry": "minecraft:geometry.full_block",
+        "minecraft:light_dampening": 0,
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "allowed_faces": [
+                "up"
+              ]
+            }
+          ]
+        },
+        "minecraft:loot": "loot_tables/blocks/items/sweet_berries_juice_barrel.json",
+        "minecraft:custom_components": [
+            "arx:onRandomTick"
+        ]
+      },
+      "permutations": [
+        {
+          "condition": "q.block_state('arx:aging_stage') == 0",
+          "components": {
+            "minecraft:material_instances": {
+    "down": {
+        "texture": "barrel_bottom"
+    },
+    "up": {
+        "texture": "w_barrel_top_0"
+    },
+    "north": {
+        "texture": "barrel_side"
+    },
+    "east": {
+        "texture": "barrel_side"
+    },
+    "south": {
+        "texture": "barrel_side"
+    },
+    "west": {
+        "texture": "barrel_side"
+    }
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('arx:aging_stage') == 1",
+          "components": {
+            "minecraft:material_instances": {
+    "down": {
+        "texture": "barrel_bottom"
+    },
+    "up": {
+        "texture": "w_barrel_top_1"
+    },
+    "north": {
+        "texture": "barrel_side"
+    },
+    "east": {
+        "texture": "barrel_side"
+    },
+    "south": {
+        "texture": "barrel_side"
+    },
+    "west": {
+        "texture": "barrel_side"
+    }
+            },
+            "minecraft:loot": "loot_tables/blocks/items/young_wine_barrel.json"
+          }
+        },
+        {
+          "condition": "q.block_state('arx:aging_stage') == 2",
+          "components": {
+            "minecraft:material_instances": {
+    "down": {
+        "texture": "barrel_bottom"
+    },
+    "up": {
+        "texture": "w_barrel_top_2"
+    },
+    "north": {
+        "texture": "barrel_side"
+    },
+    "east": {
+        "texture": "barrel_side"
+    },
+    "south": {
+        "texture": "barrel_side"
+    },
+    "west": {
+        "texture": "barrel_side"
+    }
+            },
+            "minecraft:loot": "loot_tables/blocks/items/ordinary_wine_barrel.json"
+          }
+        },
+        {
+          "condition": "q.block_state('arx:aging_stage') == 3",
+          "components": {
+            "minecraft:material_instances": {
+    "down": {
+        "texture": "barrel_bottom"
+    },
+    "up": {
+        "texture": "w_barrel_top_3"
+    },
+    "north": {
+        "texture": "barrel_side"
+    },
+    "east": {
+        "texture": "barrel_side"
+    },
+    "south": {
+        "texture": "barrel_side"
+    },
+    "west": {
+        "texture": "barrel_side"
+    }
+            },
+            "minecraft:loot": "loot_tables/blocks/items/seasoned_wine_barrel.json"
+          }
+        },
+                {
+          "condition": "q.block_state('arx:aging_stage') == 4",
+          "components": {
+            "minecraft:material_instances": {
+    "down": {
+        "texture": "barrel_bottom"
+    },
+    "up": {
+        "texture": "w_barrel_top_4"
+    },
+    "north": {
+        "texture": "barrel_side"
+    },
+    "east": {
+        "texture": "barrel_side"
+    },
+    "south": {
+        "texture": "barrel_side"
+    },
+    "west": {
+        "texture": "barrel_side"
+    }
+            },
+            "minecraft:loot": "loot_tables/blocks/items/vintage_wine_barrel.json"
+          }
+        },
+                {
+          "condition": "q.block_state('arx:aging_stage') == 5",
+          "components": {
+            "minecraft:material_instances": {
+    "down": {
+        "texture": "barrel_bottom"
+    },
+    "up": {
+        "texture": "w_barrel_top_5"
+    },
+    "north": {
+        "texture": "barrel_side"
+    },
+    "east": {
+        "texture": "barrel_side"
+    },
+    "south": {
+        "texture": "barrel_side"
+    },
+    "west": {
+        "texture": "barrel_side"
+    }
+            },
+            "minecraft:loot": "loot_tables/blocks/items/collection_wine_barrel.json"
+          }
+        }
+      ]
+    }
+  }

@@ -1,8 +1,8 @@
-  {
+{
     "format_version": "1.21.30",
     "minecraft:block": {
       "description": {
-        "identifier": "arx:growing_karrec",
+        "identifier": "arx:growing_fiuli",
         "menu_category": {
           "category": "nature"
         },
@@ -12,10 +12,7 @@
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7
+            4
           ]
         }
       },
@@ -31,12 +28,12 @@
                 "up"
               ],
               "block_filter": [
-                "minecraft:farmland"
+                "minecraft:farmland","minecraft:dirt","minecraft:grass"
               ]
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/karrec_young.json",
+        "minecraft:loot": "loot_tables/blocks/fiuli_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -47,7 +44,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_1",
+                "texture": "fiuli_1",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -61,8 +58,9 @@
               ],
               "size": [
                 4,
-                3,
+                4,
                 4
+          
               ]
             }
           }
@@ -72,7 +70,82 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_2",
+                "texture": "fiuli_2",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            },
+            "minecraft:selection_box": {
+              "origin": [
+                -2,
+                0,
+                -2
+              ],
+              "size": [
+                4,
+                5,
+                4
+              ]
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('arx:growth_stage') == 2",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "fiuli_3",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            },
+            "minecraft:selection_box": {
+              "origin": [
+                -2,
+                0,
+                -2
+              ],
+              "size": [
+                4,
+                7,
+                4
+              ]
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('arx:growth_stage') == 3",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "fiuli_4",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            },
+            "minecraft:selection_box": {
+              "origin": [
+                -2,
+                0,
+                -2
+              ],
+              "size": [
+                4,
+                8,
+                4
+              ]
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('arx:growth_stage') == 4",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "fiuli_5",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -86,161 +159,11 @@
               ],
               "size": [
                 6,
-                5,
+                10,
                 6
               ]
-            }
-          }
-        },
-        {
-          "condition": "q.block_state('arx:growth_stage') == 2",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_3",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
             },
-            "minecraft:selection_box": {
-              "origin": [
-                -4,
-                0,
-                -4
-              ],
-              "size": [
-                8,
-                9,
-                8
-              ]
-            }
-          }
-        },
-        {
-          "condition": "q.block_state('arx:growth_stage') == 3",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_4",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -4.5,
-                0,
-                -4.5
-              ],
-              "size": [
-                9,
-                12,
-                9
-              ]
-            }
-          }
-        },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 4",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_5",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 5",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_6",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                        {
-          "condition": "q.block_state('arx:growth_stage') == 6",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_7",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-        {
-          "condition": "q.block_state('arx:growth_stage') == 7",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_8",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
-              ]
-            },
-            "minecraft:loot": "loot_tables/blocks/karrec_mature.json"
+            "minecraft:loot": "loot_tables/blocks/fiuli_mature.json"
           }
         }
       ]

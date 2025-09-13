@@ -19,7 +19,7 @@
       "components": {
         "minecraft:flammable": true,
         "minecraft:collision_box": false,
-        "minecraft:geometry": "geometry.basic_plant",
+        "minecraft:geometry": "geometry.high_plant",
         "minecraft:light_dampening": 0,
         "minecraft:placement_filter": {
           "conditions": [
@@ -52,14 +52,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -8,
+                -2,
                 0,
-                -8
+                -2
               ],
               "size": [
-                16,
-                2,
-                16
+                4,
+                7,
+                4
               ]
             }
           }

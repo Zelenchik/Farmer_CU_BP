@@ -19,7 +19,7 @@
       "components": {
         "minecraft:flammable": true,
         "minecraft:collision_box": false,
-        "minecraft:geometry": "geometry.basic_plant",
+        "minecraft:geometry": "geometry.high_plant",
         "minecraft:light_dampening": 0,
         "minecraft:placement_filter": {
           "conditions": [
@@ -52,14 +52,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -8,
+                -4,
                 0,
-                -8
+                -4
               ],
               "size": [
-                16,
-                2,
-                16
+                8,
+                4,
+                8
               ]
             }
           }
@@ -77,14 +77,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -8,
+                -5,
                 0,
-                -8
+                -5
               ],
               "size": [
-                16,
-                5,
-                16
+                10,
+                11,
+                10
               ]
             }
           }
@@ -102,14 +102,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -8,
+                -6,
                 0,
-                -8
+                -6
               ],
               "size": [
+                12,
                 16,
-                9,
-                16
+                12
               ]
             }
           }
@@ -127,14 +127,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -8,
+                -6,
                 0,
-                -8
+                -6
               ],
               "size": [
+                12,
                 16,
-                13,
-                16
+                12
               ]
             }
           }
@@ -152,14 +152,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -8,
+                -6,
                 0,
-                -8
+                -6
               ],
               "size": [
+                12,
                 16,
-                16,
-                16
+                12
               ]
             },
             "minecraft:loot": "loot_tables/blocks/karelo_mature.json"

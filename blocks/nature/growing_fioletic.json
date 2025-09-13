@@ -2,7 +2,7 @@
     "format_version": "1.21.30",
     "minecraft:block": {
       "description": {
-        "identifier": "arx:growing_karrec",
+        "identifier": "arx:growing_fioletic",
         "menu_category": {
           "category": "nature"
         },
@@ -14,15 +14,14 @@
             3,
             4,
             5,
-            6,
-            7
+            6
           ]
         }
       },
       "components": {
         "minecraft:flammable": true,
         "minecraft:collision_box": false,
-        "minecraft:geometry": "geometry.basic_plant",
+        "minecraft:geometry": "geometry.high_plant",
         "minecraft:light_dampening": 0,
         "minecraft:placement_filter": {
           "conditions": [
@@ -31,12 +30,12 @@
                 "up"
               ],
               "block_filter": [
-                "minecraft:farmland"
+                "minecraft:farmland","minecraft:dirt","minecraft:grass"
               ]
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/karrec_young.json",
+        "minecraft:loot": "loot_tables/blocks/fioletic_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -47,7 +46,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_1",
+                "texture": "fioletic_1",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -55,14 +54,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -2,
+                -3.5,
                 0,
-                -2
+                -3.5
               ],
               "size": [
-                4,
-                3,
-                4
+                7,
+                8,
+                7
               ]
             }
           }
@@ -72,7 +71,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_2",
+                "texture": "fioletic_2",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -80,14 +79,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -3,
+                -3.5,
                 0,
-                -3
+                -3.5
               ],
               "size": [
-                6,
-                5,
-                6
+                7,
+                12,
+                7
               ]
             }
           }
@@ -97,7 +96,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_3",
+                "texture": "fioletic_3",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -105,14 +104,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -4,
+                -4.25,
                 0,
-                -4
+                -4.25
               ],
               "size": [
-                8,
-                9,
-                8
+                8.5,
+                16,
+                8.5
               ]
             }
           }
@@ -122,7 +121,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_4",
+                "texture": "fioletic_4",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -130,14 +129,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -4.5,
+                -4.25,
                 0,
-                -4.5
+                -4.25
               ],
               "size": [
-                9,
-                12,
-                9
+                8.5,
+                16,
+                8.5
               ]
             }
           }
@@ -147,7 +146,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_5",
+                "texture": "fioletic_5",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -155,14 +154,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -5,
+                -4.25,
                 0,
-                -5
+                -4.25
               ],
               "size": [
-                10,
-                13,
-                10
+                8.5,
+                16,
+                8.5
               ]
             }
           }
@@ -172,7 +171,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_6",
+                "texture": "fioletic_6",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -180,49 +179,24 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -5,
+                -4.25,
                 0,
-                -5
+                -4.25
               ],
               "size": [
-                10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                        {
-          "condition": "q.block_state('arx:growth_stage') == 6",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_7",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
+                8.5,
+                16,
+                8.5
               ]
             }
           }
         },
         {
-          "condition": "q.block_state('arx:growth_stage') == 7",
+          "condition": "q.block_state('arx:growth_stage') == 6",
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_8",
+                "texture": "fioletic_7",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -230,17 +204,17 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -5,
+                -4.25,
                 0,
-                -5
+                -4.25
               ],
               "size": [
-                10,
-                13,
-                10
+                8.5,
+                16,
+                8.5
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/karrec_mature.json"
+            "minecraft:loot": "loot_tables/blocks/fioletic_mature.json"
           }
         }
       ]

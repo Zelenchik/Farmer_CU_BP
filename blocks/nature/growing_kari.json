@@ -1,8 +1,8 @@
-  {
+{
     "format_version": "1.21.30",
     "minecraft:block": {
       "description": {
-        "identifier": "arx:growing_karrec",
+        "identifier": "arx:growing_kari",
         "menu_category": {
           "category": "nature"
         },
@@ -12,10 +12,7 @@
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7
+            4
           ]
         }
       },
@@ -31,12 +28,12 @@
                 "up"
               ],
               "block_filter": [
-                "minecraft:farmland"
+                "minecraft:farmland","minecraft:dirt","minecraft:grass"
               ]
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/karrec_young.json",
+        "minecraft:loot": "loot_tables/blocks/kari_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -47,7 +44,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_1",
+                "texture": "kari_1",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -61,7 +58,7 @@
               ],
               "size": [
                 4,
-                3,
+                4,
                 4
               ]
             }
@@ -72,7 +69,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_2",
+                "texture": "kari_2",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -86,7 +83,7 @@
               ],
               "size": [
                 6,
-                5,
+                8,
                 6
               ]
             }
@@ -97,7 +94,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_3",
+                "texture": "kari_3",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -111,7 +108,7 @@
               ],
               "size": [
                 8,
-                9,
+                12,
                 8
               ]
             }
@@ -122,7 +119,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_4",
+                "texture": "kari_4",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -130,99 +127,24 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -4.5,
+                -4,
                 0,
-                -4.5
+                -4
               ],
               "size": [
-                9,
+                8,
                 12,
-                9
-              ]
-            }
-          }
-        },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 4",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_5",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 5",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_6",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                        {
-          "condition": "q.block_state('arx:growth_stage') == 6",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_7",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
+                8
               ]
             }
           }
         },
         {
-          "condition": "q.block_state('arx:growth_stage') == 7",
+          "condition": "q.block_state('arx:growth_stage') == 4",
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_8",
+                "texture": "kari_5",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -230,17 +152,17 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -5,
+                -4,
                 0,
-                -5
+                -4
               ],
               "size": [
-                10,
-                13,
-                10
+                8,
+                14,
+                8
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/karrec_mature.json"
+            "minecraft:loot": "loot_tables/blocks/kari_mature.json"
           }
         }
       ]

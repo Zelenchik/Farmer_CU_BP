@@ -29,38 +29,51 @@ system.beforeEvents.startup.subscribe(initEvent => {
             let executeOnBlockPosition = `execute positioned ${event.block.location.x} ${event.block.location.y} ${event.block.location.z} run `
             switch (event.block.type.id) {
 
-                // ПРИМЕРЫ
+                //Расстения Farmer CU (Zelenchik)
 
-                // // Растение чая
-                // case "arx:tea_corp":
-                //     if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.15) { // Проверям, не вырос ли уже до конца
-                //         event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
-                //     }
-                //     break
+                // Растение Риса
+                case "arx:growing_rice":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.2) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
 
-                // // Ванильные растения
-                // case "arx:beetroots":
-                //     if (event.block.permutation.getState("arx:growth_stage") < 3 && Math.random() < 0.2) { // Проверям, не вырос ли уже до конца
-                //         event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
-                //     }
-                //     break
-                // case "arx:carrots":
-                //     if (event.block.permutation.getState("arx:growth_stage") < 3 && Math.random() < 0.2) { // Проверям, не вырос ли уже до конца
-                //         event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
-                //     }
-                //     break
-                // case "arx:potatoes":
-                //     if (event.block.permutation.getState("arx:growth_stage") < 3 && Math.random() < 0.2) { // Проверям, не вырос ли уже до конца
-                //         event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
-                //     }
-                //     break
+                // Каррец
+                case "arx:growing_karrec":
+                    if (event.block.permutation.getState("arx:growth_stage") < 7 && Math.random() < 0.07) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
 
-                // // Хлопок
-                // case "arx:cotton_plant":
-                //     if (event.block.permutation.getState("arx:growth_stage") < 6 && Math.random() < 0.07) { // Проверям, не вырос ли уже до конца
-                //         event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
-                //     }
-                //     break
+                // Растение голубики
+                case "arx:growing_blueberry":
+                    if (event.block.permutation.getState("arx:growth_stage") < 7 && Math.random() < 0.15) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+
+                // Растущие АРКС Растения/Growing ARX Plant
+                case "arx:growing_kavra":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                case "arx:growing_kaspora":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                case "arx:growing_karelo":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                case "arx:growing_dragon_pion":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+
             }
         }
     });

@@ -1,8 +1,8 @@
-  {
+{
     "format_version": "1.21.30",
     "minecraft:block": {
       "description": {
-        "identifier": "arx:growing_karrec",
+        "identifier": "arx:growing_day_kosk",
         "menu_category": {
           "category": "nature"
         },
@@ -12,10 +12,7 @@
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7
+            4
           ]
         }
       },
@@ -31,12 +28,12 @@
                 "up"
               ],
               "block_filter": [
-                "minecraft:farmland"
+                "minecraft:farmland","minecraft:dirt","minecraft:grass"
               ]
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/karrec_young.json",
+        "minecraft:loot": "loot_tables/blocks/day_kosk_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -47,32 +44,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_1",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -2,
-                0,
-                -2
-              ],
-              "size": [
-                4,
-                3,
-                4
-              ]
-            }
-          }
-        },
-        {
-          "condition": "q.block_state('arx:growth_stage') == 1",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_2",
+                "texture": "day_kosk_1",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -93,11 +65,11 @@
           }
         },
         {
-          "condition": "q.block_state('arx:growth_stage') == 2",
+          "condition": "q.block_state('arx:growth_stage') == 1",
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_3",
+                "texture": "day_kosk_2",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -105,14 +77,39 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -4,
+                -3,
                 0,
-                -4
+                -3
               ],
               "size": [
-                8,
-                9,
-                8
+                6,
+                7,
+                6
+              ]
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('arx:growth_stage') == 2",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "day_kosk_3",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            },
+            "minecraft:selection_box": {
+              "origin": [
+                -4.25,
+                0,
+                -4.25
+              ],
+              "size": [
+                8.5,
+                10,
+                8.5
               ]
             }
           }
@@ -122,7 +119,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_4",
+                "texture": "day_kosk_4",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -130,99 +127,24 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -4.5,
+                -4.25,
                 0,
-                -4.5
+                -4.25
               ],
               "size": [
-                9,
+                8.5,
                 12,
-                9
-              ]
-            }
-          }
-        },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 4",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_5",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 5",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_6",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                        {
-          "condition": "q.block_state('arx:growth_stage') == 6",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_7",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
+                8.5
               ]
             }
           }
         },
         {
-          "condition": "q.block_state('arx:growth_stage') == 7",
+          "condition": "q.block_state('arx:growth_stage') == 4",
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_8",
+                "texture": "day_kosk_5",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -230,17 +152,17 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -5,
+                -4.25,
                 0,
-                -5
+                -4.25
               ],
               "size": [
-                10,
+                8.5,
                 13,
-                10
+                8.5
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/karrec_mature.json"
+            "minecraft:loot": "loot_tables/blocks/day_kosk_mature.json"
           }
         }
       ]

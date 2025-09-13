@@ -1,8 +1,8 @@
-  {
+{
     "format_version": "1.21.30",
     "minecraft:block": {
       "description": {
-        "identifier": "arx:growing_karrec",
+        "identifier": "arx:growing_jackal_grass",
         "menu_category": {
           "category": "nature"
         },
@@ -12,10 +12,7 @@
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7
+            4
           ]
         }
       },
@@ -31,12 +28,12 @@
                 "up"
               ],
               "block_filter": [
-                "minecraft:farmland"
+                "minecraft:farmland","minecraft:dirt","minecraft:grass"
               ]
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/karrec_young.json",
+        "minecraft:loot": "loot_tables/blocks/jackal_grass_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -47,32 +44,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_1",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -2,
-                0,
-                -2
-              ],
-              "size": [
-                4,
-                3,
-                4
-              ]
-            }
-          }
-        },
-        {
-          "condition": "q.block_state('arx:growth_stage') == 1",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_2",
+                "texture": "jackal_grass_1",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -86,43 +58,18 @@
               ],
               "size": [
                 6,
-                5,
+                4,
                 6
               ]
             }
           }
         },
         {
-          "condition": "q.block_state('arx:growth_stage') == 2",
+          "condition": "q.block_state('arx:growth_stage') == 1",
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_3",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -4,
-                0,
-                -4
-              ],
-              "size": [
-                8,
-                9,
-                8
-              ]
-            }
-          }
-        },
-        {
-          "condition": "q.block_state('arx:growth_stage') == 3",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_4",
+                "texture": "jackal_grass_2",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -136,18 +83,18 @@
               ],
               "size": [
                 9,
-                12,
+                6,
                 9
               ]
             }
           }
         },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 4",
+        {
+          "condition": "q.block_state('arx:growth_stage') == 2",
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_5",
+                "texture": "jackal_grass_3",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -161,68 +108,18 @@
               ],
               "size": [
                 10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 5",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_6",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                        {
-          "condition": "q.block_state('arx:growth_stage') == 6",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_7",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
+                7,
                 10
               ]
             }
           }
         },
         {
-          "condition": "q.block_state('arx:growth_stage') == 7",
+          "condition": "q.block_state('arx:growth_stage') == 3",
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_8",
+                "texture": "jackal_grass_4",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -236,11 +133,36 @@
               ],
               "size": [
                 10,
-                13,
+                9,
+                10
+              ]
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('arx:growth_stage') == 4",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "jackal_grass_5",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
+            },
+            "minecraft:selection_box": {
+              "origin": [
+                -5,
+                0,
+                -5
+              ],
+              "size": [
+                10,
+                11,
                 10
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/karrec_mature.json"
+            "minecraft:loot": "loot_tables/blocks/jackal_grass_mature.json"
           }
         }
       ]

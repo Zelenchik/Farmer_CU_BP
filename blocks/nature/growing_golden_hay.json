@@ -2,7 +2,7 @@
     "format_version": "1.21.30",
     "minecraft:block": {
       "description": {
-        "identifier": "arx:growing_dragon_pion",
+        "identifier": "arx:growing_golden_hay",
         "menu_category": {
           "category": "nature"
         },
@@ -11,8 +11,7 @@
             0,
             1,
             2,
-            3,
-            4
+            3
           ]
         }
       },
@@ -33,7 +32,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/dragon_pion_young.json",
+        "minecraft:loot": "loot_tables/blocks/golden_hay_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -44,7 +43,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "dragon_pion_1",
+                "texture": "golden_hay_1",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -69,7 +68,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "dragon_pion_2",
+                "texture": "golden_hay_2",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -77,14 +76,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -3.5,
+                -4,
                 0,
-                -3.5
+                -4
               ],
               "size": [
-                7,
-                7,
-                7
+                8,
+                9,
+                8
               ]
             }
           }
@@ -94,7 +93,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "dragon_pion_3",
+                "texture": "golden_hay_3",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -102,14 +101,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -4.25,
+                -4,
                 0,
-                -4.25
+                -4
               ],
               "size": [
-                8.5,
                 8,
-                8.5
+                11,
+                8
               ]
             }
           }
@@ -119,32 +118,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "dragon_pion_4",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -4.25,
-                0,
-                -4.25
-              ],
-              "size": [
-                8.5,
-                9,
-                8.5
-              ]
-            }
-          }
-        },
-        {
-          "condition": "q.block_state('arx:growth_stage') == 4",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "dragon_pion_5",
+                "texture": "golden_hay_4",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -158,11 +132,11 @@
               ],
               "size": [
                 10,
-                9,
+                15,
                 10
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/dragon_pion_mature.json"
+            "minecraft:loot": "loot_tables/blocks/yuan_mature.json"
           }
         }
       ]

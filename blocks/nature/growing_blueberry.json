@@ -1,8 +1,8 @@
-  {
+{
     "format_version": "1.21.30",
     "minecraft:block": {
       "description": {
-        "identifier": "arx:growing_karrec",
+        "identifier": "arx:growing_blueberry",
         "menu_category": {
           "category": "nature"
         },
@@ -31,12 +31,12 @@
                 "up"
               ],
               "block_filter": [
-                "minecraft:farmland"
+                "minecraft:farmland","minecraft:dirt","minecraft:grass"
               ]
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/karrec_young.json",
+        "minecraft:loot": "loot_tables/blocks/blueberry_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -47,7 +47,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_1",
+                "texture": "blueberry_1",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -55,14 +55,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -2,
+                -8,
                 0,
-                -2
+                -8
               ],
               "size": [
-                4,
-                3,
-                4
+                16,
+                2,
+                16
               ]
             }
           }
@@ -72,7 +72,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_2",
+                "texture": "blueberry_2",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -80,14 +80,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -3,
+                -8,
                 0,
-                -3
+                -8
               ],
               "size": [
-                6,
+                16,
                 5,
-                6
+                16
               ]
             }
           }
@@ -97,7 +97,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_3",
+                "texture": "blueberry_3",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -105,14 +105,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -4,
+                -8,
                 0,
-                -4
+                -8
               ],
               "size": [
-                8,
+                16,
                 9,
-                8
+                16
               ]
             }
           }
@@ -122,7 +122,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_4",
+                "texture": "blueberry_4",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -130,14 +130,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -4.5,
+                -8,
                 0,
-                -4.5
+                -8
               ],
               "size": [
-                9,
-                12,
-                9
+                16,
+                13,
+                16
               ]
             }
           }
@@ -147,7 +147,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_5",
+                "texture": "blueberry_5",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -155,14 +155,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -5,
+                -8,
                 0,
-                -5
+                -8
               ],
               "size": [
-                10,
+                16,
                 13,
-                10
+                16
               ]
             }
           }
@@ -172,7 +172,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_6",
+                "texture": "blueberry_6",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -180,14 +180,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -5,
+                -8,
                 0,
-                -5
+                -8
               ],
               "size": [
-                10,
+                16,
                 13,
-                10
+                16
               ]
             }
           }
@@ -197,7 +197,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_7",
+                "texture": "blueberry_7",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -205,14 +205,14 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -5,
+                -8,
                 0,
-                -5
+                -8
               ],
               "size": [
-                10,
+                16,
                 13,
-                10
+                16
               ]
             }
           }
@@ -222,7 +222,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_8",
+                "texture": "blueberry_8",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -230,17 +230,17 @@
             },
             "minecraft:selection_box": {
               "origin": [
-                -5,
+                -8,
                 0,
-                -5
+                -8
               ],
               "size": [
-                10,
-                13,
-                10
+                16,
+                16,
+                16
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/karrec_mature.json"
+            "minecraft:loot": "loot_tables/blocks/blueberry_mature.json"
           }
         }
       ]

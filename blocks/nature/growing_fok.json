@@ -1,8 +1,8 @@
-  {
+{
     "format_version": "1.21.30",
     "minecraft:block": {
       "description": {
-        "identifier": "arx:growing_karrec",
+        "identifier": "arx:growing_fok",
         "menu_category": {
           "category": "nature"
         },
@@ -12,10 +12,7 @@
             1,
             2,
             3,
-            4,
-            5,
-            6,
-            7
+            4
           ]
         }
       },
@@ -31,12 +28,12 @@
                 "up"
               ],
               "block_filter": [
-                "minecraft:farmland"
+                "minecraft:farmland","minecraft:dirt","minecraft:grass"
               ]
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/karrec_young.json",
+        "minecraft:loot": "loot_tables/blocks/fok_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -47,7 +44,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_1",
+                "texture": "fok_1",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -72,57 +69,7 @@
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_2",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -3,
-                0,
-                -3
-              ],
-              "size": [
-                6,
-                5,
-                6
-              ]
-            }
-          }
-        },
-        {
-          "condition": "q.block_state('arx:growth_stage') == 2",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_3",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -4,
-                0,
-                -4
-              ],
-              "size": [
-                8,
-                9,
-                8
-              ]
-            }
-          }
-        },
-        {
-          "condition": "q.block_state('arx:growth_stage') == 3",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_4",
+                "texture": "fok_2",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -136,18 +83,18 @@
               ],
               "size": [
                 9,
-                12,
+                6,
                 9
               ]
             }
           }
         },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 4",
+        {
+          "condition": "q.block_state('arx:growth_stage') == 2",
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_5",
+                "texture": "fok_3",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -161,68 +108,18 @@
               ],
               "size": [
                 10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 5",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_6",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
-                10
-              ]
-            }
-          }
-        },
-                        {
-          "condition": "q.block_state('arx:growth_stage') == 6",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "karrec_7",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -5,
-                0,
-                -5
-              ],
-              "size": [
-                10,
-                13,
+                7,
                 10
               ]
             }
           }
         },
         {
-          "condition": "q.block_state('arx:growth_stage') == 7",
+          "condition": "q.block_state('arx:growth_stage') == 3",
           "components": {
             "minecraft:material_instances": {
               "*": {
-                "texture": "karrec_8",
+                "texture": "fok_4",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false
@@ -236,11 +133,36 @@
               ],
               "size": [
                 10,
-                13,
+                8,
                 10
               ]
+            }
+          }
+        },
+        {
+          "condition": "q.block_state('arx:growth_stage') == 4",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "fok_5",
+                "render_method": "alpha_test",
+                "face_dimming": false,
+                "ambient_occlusion": false
+              }
             },
-            "minecraft:loot": "loot_tables/blocks/karrec_mature.json"
+            "minecraft:selection_box": {
+              "origin": [
+                -5.5,
+                0,
+                -5.5
+              ],
+              "size": [
+                11,
+                10,
+                11
+              ]
+            },
+            "minecraft:loot": "loot_tables/blocks/fok_mature.json"
           }
         }
       ]

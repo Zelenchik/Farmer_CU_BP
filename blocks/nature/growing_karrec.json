@@ -36,7 +36,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/karrec_young.json",
+        "minecraft:loot": "loot_tables/blocks/nature/karrec_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -240,7 +240,7 @@
                 10
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/karrec_mature.json"
+            "minecraft:loot": "loot_tables/blocks/nature/karrec_mature.json"
           }
         }
       ]

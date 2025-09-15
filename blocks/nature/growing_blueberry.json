@@ -36,7 +36,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/blueberry_young.json",
+        "minecraft:loot": "loot_tables/blocks/nature/blueberry_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -240,7 +240,7 @@
                 16
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/blueberry_mature.json"
+            "minecraft:loot": "loot_tables/blocks/nature/blueberry_mature.json"
           }
         }
       ]

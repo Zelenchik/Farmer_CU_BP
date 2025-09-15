@@ -33,7 +33,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/snowflower_young.json",
+        "minecraft:loot": "loot_tables/blocks/nature/snowflower_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -162,7 +162,7 @@
                 16
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/snowflower_mature.json"
+            "minecraft:loot": "loot_tables/blocks/nature/snowflower_mature.json"
           }
         }
       ]

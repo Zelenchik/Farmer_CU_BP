@@ -33,7 +33,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/fok_young.json",
+        "minecraft:loot": "loot_tables/blocks/nature/fok_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -162,7 +162,7 @@
                 11
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/fok_mature.json"
+            "minecraft:loot": "loot_tables/blocks/nature/fok_mature.json"
           }
         }
       ]

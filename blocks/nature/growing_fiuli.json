@@ -33,7 +33,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/fiuli_young.json",
+        "minecraft:loot": "loot_tables/blocks/nature/fiuli_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -163,7 +163,7 @@
                 6
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/fiuli_mature.json"
+            "minecraft:loot": "loot_tables/blocks/nature/fiuli_mature.json"
           }
         }
       ]

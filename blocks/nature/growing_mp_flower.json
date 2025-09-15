@@ -34,7 +34,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/mp_flower_young.json",
+        "minecraft:loot": "loot_tables/blocks/nature/mp_flower_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -188,7 +188,7 @@
                 16
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/mp_flower_mature.json"
+            "minecraft:loot": "loot_tables/blocks/nature/mp_flower_mature.json"
           }
         }
       ]

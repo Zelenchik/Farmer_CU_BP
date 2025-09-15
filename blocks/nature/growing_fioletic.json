@@ -35,7 +35,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/fioletic_young.json",
+        "minecraft:loot": "loot_tables/blocks/nature/fioletic_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -214,7 +214,7 @@
                 8.5
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/fioletic_mature.json"
+            "minecraft:loot": "loot_tables/blocks/nature/fioletic_mature.json"
           }
         }
       ]

@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.60",
+    "minecraft:item": {
+      "description": {
+        "identifier": "arx:snowflower_seeds",
+        "menu_category": {
+          "category": "nature",
+          "group": "itemGroup.name.seed"
+        }
+      },
+      "components": {
+        "minecraft:icon":{ 
+          "textures": {
+            "default": "snowflower_seeds"
+          }
+        },
+        "minecraft:block_placer": {
+          "block": "arx:growing_snowflower"
+        }
+      }
+    }
+  }
+  

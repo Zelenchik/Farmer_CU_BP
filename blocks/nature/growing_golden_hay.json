@@ -32,7 +32,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/golden_hay_young.json",
+        "minecraft:loot": "loot_tables/blocks/nature/golden_hay_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -136,7 +136,7 @@
                 10
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/yuan_mature.json"
+            "minecraft:loot": "loot_tables/blocks/nature/golden_hay_mature.json"
           }
         }
       ]

@@ -33,7 +33,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/kari_young.json",
+        "minecraft:loot": "loot_tables/blocks/nature/kari_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]
@@ -162,7 +162,7 @@
                 8
               ]
             },
-            "minecraft:loot": "loot_tables/blocks/kari_mature.json"
+            "minecraft:loot": "loot_tables/blocks/nature/kari_mature.json"
           }
         }
       ]

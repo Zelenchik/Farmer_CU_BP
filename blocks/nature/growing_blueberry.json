@@ -11,11 +11,7 @@
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ]
         }
       },
@@ -123,106 +119,6 @@
             "minecraft:material_instances": {
               "*": {
                 "texture": "blueberry_4",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -8,
-                0,
-                -8
-              ],
-              "size": [
-                16,
-                13,
-                16
-              ]
-            }
-          }
-        },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 4",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "blueberry_5",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -8,
-                0,
-                -8
-              ],
-              "size": [
-                16,
-                13,
-                16
-              ]
-            }
-          }
-        },
-                {
-          "condition": "q.block_state('arx:growth_stage') == 5",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "blueberry_6",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -8,
-                0,
-                -8
-              ],
-              "size": [
-                16,
-                13,
-                16
-              ]
-            }
-          }
-        },
-                        {
-          "condition": "q.block_state('arx:growth_stage') == 6",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "blueberry_7",
-                "render_method": "alpha_test",
-                "face_dimming": false,
-                "ambient_occlusion": false
-              }
-            },
-            "minecraft:selection_box": {
-              "origin": [
-                -8,
-                0,
-                -8
-              ],
-              "size": [
-                16,
-                13,
-                16
-              ]
-            }
-          }
-        },
-        {
-          "condition": "q.block_state('arx:growth_stage') == 7",
-          "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "blueberry_8",
                 "render_method": "alpha_test",
                 "face_dimming": false,
                 "ambient_occlusion": false

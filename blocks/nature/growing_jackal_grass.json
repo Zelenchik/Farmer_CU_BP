@@ -33,7 +33,7 @@
             }
           ]
         },
-        "minecraft:loot": "loot_tables/blocks/mature/jackal_grass_young.json",
+        "minecraft:loot": "loot_tables/blocks/nature/jackal_grass_young.json",
         "minecraft:custom_components": [
             "arx:onRandomTick"
         ]

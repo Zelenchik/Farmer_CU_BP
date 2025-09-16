@@ -47,7 +47,7 @@ system.beforeEvents.startup.subscribe(initEvent => {
 
                 // Растение голубики
                 case "arx:growing_blueberry":
-                    if (event.block.permutation.getState("arx:growth_stage") < 7 && Math.random() < 0.15) {
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.15) {
                         event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
                     }
                     break
@@ -73,6 +73,68 @@ system.beforeEvents.startup.subscribe(initEvent => {
                         event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
                     }
                     break
+                    case "arx:growing_day_kosk":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "arx:growing_fioletic":
+                    if (event.block.permutation.getState("arx:growth_stage") < 6 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "arx:growing_fiuli":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "arx:growing_fok":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "arx:growing_golden_hay":
+                    if (event.block.permutation.getState("arx:growth_stage") < 3 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "arx:growing_jackal_grass":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "arx:growing_kari":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "growing_mp_flower":
+                    if (event.block.permutation.getState("arx:growth_stage") < 5 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "arx:growing_night_kosk":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "arx:growing_snowflower":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "arx:growing_wolf_death":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+                    case "arx:growing_yuan":
+                    if (event.block.permutation.getState("arx:growth_stage") < 4 && Math.random() < 0.1) {
+                        event.block.setPermutation(event.block.permutation.withState("arx:growth_stage", event.block.permutation.getState("arx:growth_stage") + 1))
+                    }
+                    break
+
+                    
 
             }
         }

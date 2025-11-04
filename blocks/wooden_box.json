@@ -4,37 +4,37 @@
         "components": {
             "minecraft:collision_box": {
                 "origin": [
-                    -3.0,
+                    -6,
                     0.0,
-                    -4.5
+                    -7.0
                 ],
                 "size": [
+                    12.0,
                     6.0,
-                    15.0,
-                    11.0
+                    14.0
                 ]
             },
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 2
             },
-            "minecraft:geometry": "geometry.globe",
+            "minecraft:geometry": "geometry.wooden_box",
             "minecraft:map_color": "#967441",
             "minecraft:material_instances": {
                 "*": {
                     "render_method": "alpha_test",
-                    "texture": "globe"
+                    "texture": "wooden_box"
                 }
             },
             "minecraft:selection_box": {
                 "origin": [
-                    -3.0,
+                    -6,
                     0.0,
-                    -4.5
+                    -7.0
                 ],
                 "size": [
+                    12.0,
                     6.0,
-                    15.0,
-                    11.0
+                    14.0
                 ]
             },
             "minecraft:placement_filter": {
@@ -48,7 +48,7 @@
             }
         },
         "description": {
-            "identifier": "arx:globe",
+            "identifier": "arx:wooden_box",
             "menu_category": {
                 "category": "construction"
             },

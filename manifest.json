@@ -1,25 +1,32 @@
 {
-    "format_version": 2,
-    "header": {
-        "name": "Farmer_CU_BP",
-        "description": "Начнём сажать!",
-        "uuid": "0e8ec917-fa8b-4d95-8330-4f705c136d8a",
-        "version": [1, 0, 0],
-        "min_engine_version":
-         [
+  "format_version": 2,
+  "header": {
+    "name": "Farmer_CU_BP",
+    "description": "Начнём сажать!",
+    "uuid": "0e8ec917-fa8b-4d95-8330-4f705c136d8a",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      32
+    ]
+  },
+  "modules": [
+    {
+      "description": "Pack",
+      "type": "data",
+      "uuid": "3afabd00-ce43-4635-a3f2-3ec954626941",
+      "version": [
         1,
-        20,
-        32
-        ]
+        0,
+        0
+      ]
     },
-    "modules": [
-        {
-            "description": "Pack",
-            "type": "data",
-            "uuid": "3afabd00-ce43-4635-a3f2-3ec954626941",
-            "version": [1, 0, 0]
-        },
-        {
+    {
       "type": "script",
       "language": "javascript",
       "uuid": "cf6bdf95-1512-4120-b9d5-a30c777c0f39",
@@ -30,8 +37,8 @@
       ],
       "entry": "scripts/_main.js"
     }
-    ],
-"dependencies": [
+  ],
+  "dependencies": [
     {
       "module_name": "@minecraft/server-gametest",
       "version": "1.0.0-beta"
@@ -42,7 +49,7 @@
     },
     {
       "module_name": "@minecraft/server",
-      "version": "2.2.0-beta"
+      "version": "2.4.0-beta"
     },
     {
       "module_name": "@minecraft/server-ui",
